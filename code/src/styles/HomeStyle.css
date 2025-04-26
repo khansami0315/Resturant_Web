@@ -1,0 +1,70 @@
+.home {
+    height: 100vh;
+    /* Full screen height */
+    width: 100%;
+    /* Full screen width */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* "left" is not a valid value for align-items */
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 3rem;
+    /* Optional: spacing from left edge */
+}
+
+.headerContainer {
+    width: auto;
+    margin-left: 30px;
+}
+
+.home .headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    color: rgb(15, 15, 15);
+    line-height: 1.9;
+}
+
+.headerContainer button {
+    background-color: black;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.headerContainer button:hover {
+    background-color: #07090a;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+@media only screen and(max-width:600px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer {
+        margin-left: 0;
+        border-radius: 10px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+    }
+    .home .headerContainer h1 {
+        font-size: 40px;
+        height: 30px;
+        margin: 15px 0px;
+        color: white;
+    }
+}
